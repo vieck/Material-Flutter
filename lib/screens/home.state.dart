@@ -13,6 +13,22 @@ class HomePageState extends State<HomePage> {
           new Container(color: Colors.amber),
         ],
       ),
+      bottomNavigationBar: getBottomNav(),
     );
   }
+}
+
+BottomNavigationBar getBottomNav() {
+  return new BottomNavigationBar(
+    fixedColor: Colors.red,
+    items: getBottomNavItems(),
+  );
+}
+
+List<BottomNavigationBarItem> getBottomNavItems() {
+  List<BottomNavigationBarItem> bottomNavItems = [
+    new BottomNavigationBarItem(icon: const Icon(Icons.favorite), title: new Text('Favorites')),
+    new BottomNavigationBarItem(icon: const Icon(Icons.history), title: new Text('History')),
+  ];
+  return bottomNavItems;
 }
