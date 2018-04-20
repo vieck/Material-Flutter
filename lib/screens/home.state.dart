@@ -10,6 +10,9 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      appBar: new AppBar(
+        title: new Text('Material App'),
+      ),
       body: new PageView(
         children: [
           new Container(color: Colors.red),
