@@ -16,6 +16,7 @@ class HomePageState extends State<HomePage> {
           new Container(color: Colors.black),
         ],
         onPageChanged: onHomePageChanged,
+        controller: pageController,
       ),
       bottomNavigationBar: new BottomNavigationBar(
         fixedColor: Colors.red,
