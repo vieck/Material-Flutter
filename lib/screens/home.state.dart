@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_flutter/screens/home.dart';
+import 'package:material_flutter/screens/news/news.dart';
 
 class HomePageState extends State<HomePage> {
 
@@ -15,7 +16,7 @@ class HomePageState extends State<HomePage> {
       ),
       body: new PageView(
         children: [
-          new Container(color: Colors.red),
+          new News(),
           new Container(color: Colors.black),
         ],
         onPageChanged: onHomePageChanged,
@@ -39,7 +40,7 @@ class HomePageState extends State<HomePage> {
   List<BottomNavigationBarItem> getBottomNavItems() {
     List<BottomNavigationBarItem> bottomNavItems = [
       new BottomNavigationBarItem(
-          icon: const Icon(Icons.favorite), title: new Text('Favorites')),
+          icon: const Icon(Icons.favorite), title: new Text('News')),
       new BottomNavigationBarItem(
           icon: const Icon(Icons.history), title: new Text('History')),
     ];
