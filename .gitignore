@@ -8,7 +8,8 @@ build/
 ios/.generated/
 packages
 .flutter-plugins
-
+api.key.json
+api.key.json
 # See https://www.dartlang.org/tools/private-files.html
 
 # Files and directories created by pub
